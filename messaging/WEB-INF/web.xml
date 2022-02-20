@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+
+	<servlet>
+		<servlet-name>QueueMessage</servlet-name>
+		<servlet-class>com.servlets.postToQueue</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>TopicMessage</servlet-name>
+		<servlet-class>com.servlets.postToTopic</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>DistQueueMessage</servlet-name>
+		<servlet-class>com.servlets.postToDistQueue</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>QueueMessage</servlet-name>
+		<url-pattern>/posttoqueue</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>TopicMessage</servlet-name>
+		<url-pattern>/posttotopic</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>DistQueueMessage</servlet-name>
+		<url-pattern>/posttodistqueue</url-pattern>
+	</servlet-mapping>
+
+
+	<welcome-file-list>
+		<welcome-file>welcome.html</welcome-file>
+	</welcome-file-list>
+
+</web-app>

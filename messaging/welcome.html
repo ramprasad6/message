@@ -1,0 +1,52 @@
+
+<HTML>
+<HEAD><TITLE>Messaging Center</TITLE></HEAD>
+
+<BODY>
+
+<CENTER>
+<FONT SIZE="6" COLOR="navy">Welcome To The Messaging Center</FONT>
+</CENTER>
+
+<FORM NAME="QueueMessage" ACTION="./posttoqueue" METHOD="POST">
+<TABLE WIDTH="60%" ALIGN="center" BGCOLOR="yellow">
+	<TR><TD WIDTH="50%" ALIGN="right">Message</TD>
+		<TD WIDTH="50%"><INPUT TYPE="text" NAME="message" VALUE="Enter A Message For the Queue" SIZE="50"></TD>
+	</TR>
+	<TR><TD COLSPAN="2" ALIGN="center">
+			<INPUT TYPE="submit" NAME="btnSubmit" VALUE="Post Message to the Queue">
+		</TD>
+	</TR>
+</TABLE>
+</FORM>
+<BR><BR><BR>
+<FORM NAME="TopicMessage" ACTION="./posttotopic" METHOD="POST">
+<TABLE WIDTH="60%" ALIGN="center" BGCOLOR="yellow">
+	<TR><TD WIDTH="50%" ALIGN="right">Message</TD>
+		<TD WIDTH="50%"><INPUT TYPE="text" NAME="message" VALUE="Enter A Message For the Topic" SIZE="50"></TD>
+	</TR>
+	<TR><TD COLSPAN="2" ALIGN="center">
+			<INPUT TYPE="submit" NAME="btnSubmit" VALUE="Post Message to the Topic">
+		</TD>
+	</TR>
+</TABLE>
+</FORM>
+
+
+<BR><BR><BR>
+<FORM NAME="DistQueueMessage" ACTION="./posttodistqueue" METHOD="POST">
+<TABLE WIDTH="60%" ALIGN="center" BGCOLOR="yellow">
+	<TR><TD WIDTH="50%" ALIGN="right">Message</TD>
+		<TD WIDTH="50%"><INPUT TYPE="text" NAME="message" VALUE="Enter A Message For the Distributed Queue" SIZE="50"></TD>
+	</TR>
+	<TR><TD COLSPAN="2" ALIGN="center">
+			<INPUT TYPE="submit" NAME="btnSubmit" VALUE="Post Message to the Distributed Queue">
+		</TD>
+	</TR>
+</TABLE>
+</FORM>
+<HR>
+
+
+</BODY>
+</HTML>
